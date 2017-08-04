@@ -1,0 +1,9 @@
+[package]
+name = "libtool"
+version = "0.1.0"
+authors = ["Kan-Ru Chen <kanru@kanru.info>"]
+description = "build script helper to automatically generate libtool convenience library (.la) files."
+license = "MPL-2.0"
+documentation = "https://docs.rs/libtool"
+homepage = "https://github.com/kanru/libtool-rs"
+repository = "https://github.com/kanru/libtool-rs"
