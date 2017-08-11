@@ -59,7 +59,7 @@ pub fn generate_convenience_lib(lib: &str) -> std::io::Result<()> {
     writeln!(file, "dlname=''")?;
     writeln!(file, "library_names=''")?;
     writeln!(file, "old_library='{}.a'", lib)?;
-    writeln!(file, "inherited_linker_flags=' -pthread -lm'")?;
+    writeln!(file, "inherited_linker_flags=' -pthread -lm -ldl'")?;
     writeln!(file, "installed=no")?;
     writeln!(file, "shouldnotlink=no")?;
     symlink(&old_lib_path, &new_lib_path)?;
