@@ -4,7 +4,7 @@
 
 //! This library can help you generate libtool archive files to link
 //! with existing C library.
-//! 
+//!
 //! Add this to Config.toml
 //!
 //! ```toml
@@ -27,8 +27,8 @@
 //! It will automatically generate the file `target/{profile}/libfoo.la`
 
 use std::env;
-use std::fs::File;
 use std::fs;
+use std::fs::File;
 use std::io::prelude::*;
 use std::os::unix::fs::symlink;
 use std::path::PathBuf;
