@@ -49,9 +49,7 @@ pub fn generate_convenience_lib(lib: &str) -> std::io::Result<()> {
     if la_path.exists() {
         fs::remove_file(&la_path)?;
     }
-    if new_lib_path.exists() {
-        fs::remove_file(&new_lib_path)?;
-    }
+    let _ = fs::remove_file(&new_lib_path);
 
     let mut file = File::create(&la_path)?;
     writeln!(file, "# {}.la - a libtool library file", lib)?;
